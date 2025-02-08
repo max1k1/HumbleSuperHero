@@ -27,7 +27,7 @@ function CreateHero({ onNewHero }: CreateHeroProps) {
 
     const onSubmit = (data: Hero) => {
         const newHero: Hero = data;
-        const apiUrl = process.env.REACT_APP_BACK_END_API;
+        const apiUrl = process.env.REACT_APP_BACK_END_API || "http://localhost:5002";
 
         if (!apiUrl) {
             console.error("API URL is not defined in environment variables.");

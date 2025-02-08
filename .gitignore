@@ -1,9 +1,9 @@
 # Ignore node_modules folders anywhere in the project
 node_modules/
 
-# Ignore environment files in both backend & frontend
+# Ignore environment files
 .env
 
-# If you have build folders in React or similar
+# Ignore build/dist outputs
 build/
 dist/
